@@ -47,9 +47,9 @@
 
 .container-page { width: min(100% - 3rem, 1180px); margin-inline: auto; }
 .section { padding-block: clamp(4.5rem, 9vw, 8rem); }
-.hero-section { position: relative; overflow: hidden; padding-block: clamp(2.5rem, 4vw, 4rem) clamp(4rem, 7vw, 6rem); }
-.hero-section::before { content: ''; position: absolute; inset: 0 0 auto; height: 100%; pointer-events: none; opacity: .5; background: radial-gradient(ellipse at 78% 38%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 38%), radial-gradient(ellipse at 17% 82%, color-mix(in srgb, var(--accent-secondary) 9%, transparent), transparent 32%), linear-gradient(90deg, transparent 49.95%, var(--line) 50%, transparent 50.05%); mask-image: linear-gradient(to bottom, black, transparent 90%); }
-.hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr); align-items: center; gap: clamp(2rem, 6vw, 5.5rem); }
+.hero-section { position: relative; overflow: hidden; padding-block: clamp(1.25rem, 2vw, 2rem) clamp(4rem, 7vw, 6rem); }
+.hero-section::before { content: ''; position: absolute; inset: 0 0 auto; height: 100%; pointer-events: none; opacity: .5; background: radial-gradient(ellipse at 78% 38%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 38%), radial-gradient(ellipse at 17% 82%, color-mix(in srgb, var(--accent-secondary) 9%, transparent), transparent 32%); mask-image: linear-gradient(to bottom, black, transparent 90%); }
+.hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); align-items: start; gap: clamp(1.5rem, 3vw, 3rem); }
 .eyebrow, .section-kicker { display: flex; align-items: center; gap: 10px; color: var(--accent-strong); font: 500 .68rem/1.4 var(--font-mono); letter-spacing: 0; text-transform: uppercase; }
 .eyebrow::before, .section-kicker::before { content: ''; width: 22px; height: 1px; background: currentColor; }
 .hero-name { margin: 1.2rem 0 .65rem; color: var(--fg); font: 600 clamp(1.35rem, 4vw, 2.8rem)/1.2 var(--font-mono); white-space: nowrap; }
@@ -75,41 +75,35 @@
 .hero-meta { display: flex; align-items: center; gap: 10px; margin-top: 2.25rem; color: var(--muted); font: .7rem/1.4 var(--font-mono); }
 .status-dot { position: relative; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 .status-dot::after { content: ''; position: absolute; inset: -4px; border: 1px solid var(--accent); border-radius: 50%; opacity: .5; }
-.system-figure { position: relative; min-height: 430px; display: flex; flex-direction: column; justify-content: center; padding: 68px 20px 62px; border: 1px solid var(--line); background: linear-gradient(145deg, var(--surface), color-mix(in srgb, var(--bg) 70%, var(--surface))); overflow: hidden; transition: border-color .25s ease, box-shadow .25s ease; }
-.system-figure::before { content: ''; position: absolute; pointer-events: none; }
-.system-figure::before { inset: 0; opacity: .5; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 42px 42px; mask-image: radial-gradient(ellipse at center, black 15%, transparent 78%); }
-.figure-label { position: absolute; z-index: 2; top: 20px; left: 20px; color: var(--muted); font: .62rem/1 var(--font-mono); }
-.figure-index { position: absolute; z-index: 2; right: 20px; bottom: 18px; color: var(--muted); font: .62rem/1 var(--font-mono); }
-.dev-stack { position: relative; z-index: 1; display: grid; gap: 9px; }
-.dev-stack::before { position: absolute; top: 14px; bottom: 14px; left: 28px; width: 1px; background: linear-gradient(var(--accent), var(--accent-secondary)); content: ''; opacity: .35; transform: scaleY(.35); transform-origin: top; transition: transform .45s ease, opacity .3s ease; }
-.dev-layer { position: relative; display: grid; grid-template-columns: minmax(118px, .48fr) 1fr; align-items: center; gap: 12px; min-height: 58px; padding: 9px 11px; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface-raised) 78%, transparent); opacity: 1; transition: transform .22s ease, border-color .2s ease, background-color .2s ease; }
-.dev-layer-heading { position: relative; z-index: 1; display: flex; align-items: center; gap: 9px; min-width: 0; }
-.dev-layer-index { display: grid; place-items: center; flex: 0 0 24px; width: 24px; aspect-ratio: 1; border: 1px solid var(--line-strong); border-radius: 50%; color: var(--accent-strong); background: var(--surface); font: .55rem/1 var(--font-mono); }
-.dev-layer-label { color: var(--muted); font: .57rem/1.35 var(--font-mono); }
-.dev-layer-skills { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
-.dev-layer-skills li { padding: 4px 6px; border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--line)); color: var(--fg); background: color-mix(in srgb, var(--accent) 6%, transparent); font: .58rem/1.2 var(--font-mono); transition: transform .2s ease, border-color .2s ease, background-color .2s ease; }
-.architecture-flow { grid-column: 1 / -1; display: grid; gap: 7px; padding-top: 8px; border-top: 1px dashed var(--line-strong); }
-.architecture-service-chain { display: grid; grid-template-columns: minmax(0, 1fr) 22px minmax(0, 1fr) 22px minmax(0, 1fr); align-items: center; }
-.architecture-node { padding: 5px 3px; border: 1px solid var(--line-strong); color: var(--fg); background: var(--surface); font: .52rem/1.25 var(--font-mono); text-align: center; }
-.architecture-connector { position: relative; height: 1px; background: var(--line-strong); }
-.architecture-connector::after { position: absolute; top: -2px; left: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); content: ''; opacity: 0; }
-.architecture-event-bus { display: flex; align-items: center; gap: 7px; min-height: 22px; color: var(--accent-strong); font: .54rem/1.2 var(--font-mono); }
-.architecture-event-dot { width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%; background: var(--accent-secondary); }
-.architecture-event-bus strong { margin-left: auto; color: var(--fg); font-weight: 500; }
-.system-caption { position: absolute; z-index: 2; left: 20px; bottom: 18px; max-width: calc(100% - 120px); color: var(--muted); font: .58rem/1.4 var(--font-mono); }
-@media (hover: hover) and (pointer: fine) {
-  .system-figure:hover { border-color: var(--accent); box-shadow: 0 18px 55px color-mix(in srgb, var(--accent) 11%, transparent); }
-  .system-figure:hover .dev-stack::before { opacity: .8; transform: scaleY(1); }
-  .dev-layer:hover { transform: translateX(3px); border-color: var(--accent); background: color-mix(in srgb, var(--surface-raised) 84%, var(--accent)); }
-  .dev-layer:hover .dev-layer-index { color: var(--bg); border-color: var(--accent); background: var(--accent); transform: rotate(12deg); }
-  .dev-layer:hover .dev-layer-skills li { transform: translateY(-2px); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
-  .dev-layer:nth-child(3):hover .dev-layer-index, .dev-layer:nth-child(4):hover .dev-layer-index { border-color: var(--accent-secondary); background: var(--accent-secondary); }
-  .dev-layer:nth-child(3):hover, .dev-layer:nth-child(4):hover { border-color: var(--accent-secondary); }
-  .system-figure:hover .architecture-connector::after { opacity: 1; animation: event-packet .9s ease-in-out infinite alternate; }
-  .system-figure:hover .architecture-event-dot { animation: event-beacon .9s ease-in-out infinite alternate; }
-}
-@keyframes event-packet { to { left: calc(100% - 5px); } }
-@keyframes event-beacon { to { transform: scale(1.65); box-shadow: 0 0 9px var(--accent-secondary); } }
+.system-figure { --space-fg: var(--fg); --space-muted: var(--muted); --space-node-bg: color-mix(in srgb, var(--surface-raised) 86%, transparent); position: relative; min-height: 500px; display: flex; flex-direction: column; justify-content: center; padding: 68px 8px 62px; overflow: hidden; border: 0; color: var(--space-fg); background-color: transparent; background-image: radial-gradient(ellipse at 49% 53%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 47%), radial-gradient(ellipse at 82% 18%, color-mix(in srgb, var(--accent-secondary) 6%, transparent), transparent 38%); transition: background-color .7s ease, color .7s ease; }
+.system-figure::before { position: absolute; inset: 0; z-index: 0; background-image: radial-gradient(1px 1px at 8% 18%, color-mix(in srgb, var(--fg) 52%, transparent) 55%, transparent 100%), radial-gradient(1px 1px at 18% 74%, color-mix(in srgb, var(--fg) 36%, transparent) 55%, transparent 100%), radial-gradient(1.5px 1.5px at 28% 38%, color-mix(in srgb, var(--accent) 72%, transparent) 55%, transparent 100%), radial-gradient(1px 1px at 39% 86%, color-mix(in srgb, var(--fg) 42%, transparent) 55%, transparent 100%), radial-gradient(1px 1px at 57% 14%, color-mix(in srgb, var(--fg) 48%, transparent) 55%, transparent 100%), radial-gradient(1.5px 1.5px at 72% 42%, color-mix(in srgb, var(--accent-secondary) 72%, transparent) 55%, transparent 100%), radial-gradient(1px 1px at 83% 78%, color-mix(in srgb, var(--fg) 42%, transparent) 55%, transparent 100%), radial-gradient(1px 1px at 92% 29%, color-mix(in srgb, var(--fg) 38%, transparent) 55%, transparent 100%); content: ''; opacity: .58; pointer-events: none; animation: starfield-drift 26s ease-in-out infinite alternate; transition: opacity .7s ease; }
+.figure-label { position: absolute; z-index: 2; top: 20px; left: 20px; color: var(--space-muted); font: .62rem/1 var(--font-mono); }
+.figure-index { position: absolute; z-index: 2; right: 20px; bottom: 18px; color: var(--space-muted); font: .62rem/1 var(--font-mono); }
+.constellation-title { position: relative; z-index: 2; margin: 0 0 6px; color: var(--space-fg); font: 500 .88rem/1.3 var(--font-display); text-align: center; }
+.skill-universe { position: relative; z-index: 1; width: 100%; height: clamp(290px, 32vw, 370px); }
+.constellation-links { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.constellation-link { fill: none; stroke: color-mix(in srgb, var(--accent) 42%, transparent); stroke-width: .28; stroke-dasharray: 1.1 1.5; vector-effect: non-scaling-stroke; transition: stroke .7s ease, opacity .5s ease; }
+.constellation-link-frontend { stroke: color-mix(in srgb, var(--accent-secondary) 48%, transparent); }
+.constellation-link-architecture { stroke: color-mix(in srgb, var(--accent) 28%, var(--accent-secondary) 30%); }
+.constellation-link-messaging { stroke: color-mix(in srgb, var(--accent) 24%, #52aabd 46%); }
+.constellation-core { position: absolute; z-index: 2; top: 53%; left: 50%; display: grid; width: 82px; aspect-ratio: 1; align-content: center; justify-items: center; gap: 4px; border: 1px solid color-mix(in srgb, var(--accent) 70%, var(--line-strong)); border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 22%, var(--surface-raised)), color-mix(in srgb, var(--surface-raised) 94%, transparent) 72%); box-shadow: 0 0 16px color-mix(in srgb, var(--accent) 22%, transparent), inset 0 0 15px color-mix(in srgb, var(--accent) 10%, transparent); transform: translate(-50%, -50%); animation: core-star-pulse 3.4s ease-in-out infinite; transition: border-color .7s ease, background .7s ease, box-shadow .7s ease; }
+.constellation-core span { color: var(--accent-strong); font: .43rem/1.1 var(--font-mono); transition: color .7s ease; }
+.constellation-core strong { color: var(--fg); font: 600 .68rem/1.1 var(--font-mono); transition: color .7s ease; }
+.constellation-nodes { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+.constellation-node-position { position: absolute; z-index: 2; max-width: 44%; transform: translate(-50%, -50%); }
+.constellation-node { display: flex; width: max-content; max-width: 100%; align-items: center; gap: 6px; padding: 5px 8px; border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--line-strong)); color: var(--space-fg); background: var(--space-node-bg); box-shadow: 0 3px 12px color-mix(in srgb, var(--fg) 8%, transparent); font: .55rem/1.3 var(--font-mono); white-space: nowrap; transform-origin: center; transition: color .7s ease, background-color .7s ease, border-color .7s ease, box-shadow .7s ease; }
+.constellation-star { width: 5px; height: 5px; flex: 0 0 5px; border-radius: 50%; color: var(--accent); background: currentColor; box-shadow: 0 0 8px currentColor; animation: star-twinkle 2.6s ease-in-out infinite; transition: color .7s ease; }
+.constellation-node-frontend { border-color: color-mix(in srgb, var(--accent-secondary) 46%, var(--line-strong)); }
+.constellation-node-frontend .constellation-star { color: var(--accent-secondary); }
+.constellation-node-architecture { border-color: color-mix(in srgb, var(--accent) 26%, var(--accent-secondary) 34%); }
+.constellation-node-architecture .constellation-star { color: color-mix(in srgb, var(--accent) 46%, var(--accent-secondary)); }
+.constellation-node-messaging { border-color: color-mix(in srgb, var(--accent) 25%, #52aabd 40%); }
+.constellation-node-messaging .constellation-star { color: color-mix(in srgb, var(--accent) 22%, #52aabd); }
+.constellation-node-application .constellation-star { color: var(--accent); }
+.system-caption { position: absolute; z-index: 2; left: 20px; bottom: 18px; max-width: calc(100% - 120px); color: var(--space-muted); font: .58rem/1.4 var(--font-mono); transition: color .7s ease; }
+@keyframes star-twinkle { 0%, 100% { opacity: .55; transform: scale(.82); } 50% { opacity: 1; transform: scale(1.3); } }
+@keyframes core-star-pulse { 0%, 100% { box-shadow: 0 0 16px rgba(90, 230, 194, .34), inset 0 0 15px rgba(90, 230, 194, .12); } 50% { box-shadow: 0 0 25px rgba(90, 230, 194, .58), inset 0 0 18px rgba(90, 230, 194, .2); } }
+@keyframes starfield-drift { from { opacity: .48; } to { opacity: .78; } }
 
 .section-heading { display: grid; grid-template-columns: minmax(160px, .7fr) 1.3fr; align-items: end; gap: 2rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
 .section-title { margin: .75rem 0 0; color: var(--fg); font: 500 clamp(2rem, 4.8vw, 3.5rem)/1.05 var(--font-display); letter-spacing: 0; }
@@ -188,9 +182,9 @@
   .nav-command-prefix { display: none; }
   .header-actions { margin-left: auto; }
   .container-page { width: min(100% - 2rem, 1180px); }
-  .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero-section { padding-top: 2.5rem; }
-  .system-figure { min-height: min(420px, 92vw); }
+  .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero-section { padding-top: 1.25rem; }
+  .system-figure { min-height: 420px; padding-block: 58px 56px; }
   .section-heading { grid-template-columns: 1fr; gap: 1rem; }
   .section-intro { justify-self: start; }
   .experience-item { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.75rem 0; }
@@ -209,10 +203,10 @@
   .header-nav { gap: .2rem; }
   .nav-command { padding-inline: 3px; font-size: .58rem; }
   .hero-name { font-size: clamp(1.35rem, 6.8vw, 2rem); }
-  .system-figure { padding-inline: 12px; }
-  .dev-layer { grid-template-columns: 1fr; gap: 7px; }
-  .dev-stack::before { left: 11px; }
-  .dev-layer-heading { gap: 7px; }
+  .system-figure { min-height: 390px; padding-inline: 0; }
+  .skill-universe { height: 250px; }
+  .constellation-node-position { max-width: 48%; }
+  .constellation-node { gap: 4px; padding: 4px 5px; font-size: .51rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .button-primary, .button-secondary { width: 100%; box-sizing: border-box; }
   .credential-entry { flex-direction: column; gap: .25rem; }
@@ -222,9 +216,8 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .system-figure { transform: none !important; }
-  .dev-stack::before, .dev-layer:hover, .dev-layer:hover .dev-layer-index, .dev-layer:hover .dev-layer-skills li { transform: none !important; }
-  .architecture-connector::after, .architecture-event-dot { animation: none !important; }
-  .hero-skill-chip:hover { transform: none !important; box-shadow: none !important; }
+  .constellation-core { animation: none; }
+  .constellation-star { animation: none; }
   .nav-terminal-label::after { animation: none; }
   .brand-part, .brand-connector { animation: none; opacity: 1; transform: none; }
   .brand-connector::before { animation: none; opacity: 0; transform: translate(-50%, -50%); }
