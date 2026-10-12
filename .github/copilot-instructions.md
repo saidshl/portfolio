@@ -6,7 +6,7 @@ Personal portfolio of **SASHL**, Full Stack .NET Engineer. Static site deployed 
 - Vite + React + TypeScript, Tailwind CSS (`@tailwindcss/vite`)
 - Framer Motion (reveals, hover, transitions), GSAP ScrollTrigger + Lenis (smooth scroll, parallax)
 - Optional: Three.js via `@react-three/fiber` / `drei` for the hero background
-- `base` in `vite.config.ts` must match the GitHub repo name (`/shl-portfolio/`)
+- `base` in `vite.config.ts` must match the GitHub repo name (`/portfolio/`)
 - Static output only: no server code, no secrets, no runtime backend
 
 ## Branding
