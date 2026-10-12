@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+:root,
+[data-theme="dark"] {
+  --bg: #111614;
+  --surface: #171f1c;
+  --surface-raised: #1d2824;
+  --fg: #f0f4ef;
+  --muted: #9baaa3;
+  --accent: #52d6bd;
+  --accent-strong: #67e2c8;
+  --accent-secondary: #f0a17c;
+  --line: rgba(219, 238, 228, .12);
+  --line-strong: rgba(219, 238, 228, .24);
+  --font-sans: "DM Sans", "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "DM Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+  color-scheme: dark;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="light"] {
+  --bg: #f5f7f3;
+  --surface: #edf1ec;
+  --surface-raised: #ffffff;
+  --fg: #18211d;
+  --muted: #58675f;
+  --accent: #138d79;
+  --accent-strong: #087260;
+  --accent-secondary: #a74435;
+  --line: rgba(24, 43, 34, .12);
+  --line-strong: rgba(24, 43, 34, .25);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { min-width: 320px; margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 var(--font-sans); transition: background-color .25s ease, color .25s ease; }
+button, a { font: inherit; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+::selection { color: #101713; background: var(--accent); }
+#root { min-height: 100svh; }

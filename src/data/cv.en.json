@@ -1,0 +1,194 @@
+{
+  "locale": "en",
+  "profile": {
+    "name": "SASHL",
+    "logo": "SHL",
+    "title": "Full Stack .NET Engineer",
+    "summary": "Full Stack .NET Engineer with 5+ years of experience designing and delivering enterprise web solutions. Skilled in C#, ASP.NET, React, REST APIs, microservices, and event-driven architectures, with a focus on reliable integrations, maintainable code, and automated testing.",
+    "location": "Île-de-France, France",
+    "contact": {
+      "email": "",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/saidsouhayel/?isSelfProfile=true",
+      "github": "https://github.com/saidshl",
+      "nuget": "https://www.nuget.org/profiles/Said93Souhayel"
+    }
+  },
+  "sections": [
+    {
+      "id": "skills",
+      "type": "skills",
+      "title": "Skills",
+      "items": [
+        { "category": "Languages", "values": ["C#", "JavaScript", "TypeScript", "SQL"] },
+        { "category": "Frameworks & Technologies", "values": ["ASP.NET Core", ".NET 8", "ASP.NET Framework", "Angular", "React.js", "jQuery", "Node.js", "Angular 6", "xUnit", "SpecFlow", "Pact-net", "Selenium"] },
+        { "category": "Databases", "values": ["SQL Server", "PostgreSQL", "DB2", "SQLite", "MongoDB", "Redis"] },
+        { "category": "Architectures", "values": ["Event Driven Architecture", "Multi-Tenancy", "Microservices", "Clean Architecture", "RESTful API", "SOAP API"] },
+        { "category": "Working Methodologies", "values": ["Scrum", "Kanban"] },
+        { "category": "Project Tools", "values": ["Kafka", "RabbitMQ", "Azure DevOps", "Git", "SVN", "Docker", "Kubernetes", "Jira", "Bitbucket"] }
+      ]
+    },
+    {
+      "id": "experience",
+      "type": "timeline",
+      "title": "Professional Experience",
+      "items": [
+        {
+          "role": "Full Stack .NET Engineer",
+          "client": "CDiscount",
+          "period": { "start": "2021-07", "end": null },
+          "location": "Bordeaux, France",
+          "projects": [
+            {
+              "name": "Marketplace CDiscount Powered by Octopia",
+              "description": "A CDiscount subsidiary providing a turnkey e-commerce marketplace to sellers, with access to many services that ease e-commerce growth in France and internationally.",
+              "features": [
+                "Built the registered sales channels module.",
+                "Enabled sellers to register on multiple sales channels.",
+                "Synchronized seller shops and subscriptions.",
+                "Synchronized offers, products, orders and discussions.",
+                "Synchronized financial flows (financial reports).",
+                "Replicated sales channel catalogs and implemented fine-grained seller catalog management."
+              ],
+              "tasks": [
+                "Adopted the Scrum agile methodology.",
+                "Adopted a microservices architecture.",
+                "Applied Event Driven Architecture.",
+                "Applied a Design First approach.",
+                "Applied a Multi-Tenancy approach.",
+                "Created jobs and workers.",
+                "Created REST web services.",
+                "Wrote unit tests.",
+                "Wrote BDD and Pact tests.",
+                "Consumed web services developed by other teams."
+              ],
+              "technologies": ["ASP.NET Core 5", "ASP.NET 6", "Kafka", "RabbitMQ", "MongoDB", "Azure DevOps", "Elasticsearch", "Kibana", "SonarQube", "Refit", "xUnit", "Stryker", "SpecFlow", "Pact-net"]
+            }
+          ]
+        },
+        {
+          "role": "Full Stack .NET Engineer",
+          "client": "Banque de Tunisie (BT)",
+          "period": { "start": "2019-11", "end": "2021-06" },
+          "location": "Tunis, Tunisia",
+          "projects": [
+            {
+              "name": "BIG BOARD",
+              "description": "Design and development of a platform routing stock-market orders and SICAV investment orders at branch level and for the DGMC front office (Securities and Capital Management Department).",
+              "features": [
+                "Built the administration module (users, roles, permissions).",
+                "Built the online trading module.",
+                "Built the SICAV (open-ended investment company) module.",
+                "Generated PDF files for stock and SICAV orders, and daily trading reports."
+              ],
+              "tasks": [
+                "UML analysis and design.",
+                "Adopted the Scrum agile methodology.",
+                "Applied the Repository Pattern to abstract data access, within a layered architecture.",
+                "Built the web platform.",
+                "Wrote the required unit tests.",
+                "Implemented real-time communication with SignalR."
+              ],
+              "technologies": ["ASP.NET Web API", "Unity", "React.js", "MobX", "NHibernate", "AS400", "Azure DevOps", "Scrum", "SignalR", "RDLC", "xUnit"]
+            },
+            {
+              "name": "Hermes",
+              "description": "Rebuild of the teletransmission management platform for the international network.",
+              "features": [
+                "Built the administration module (users, roles, permissions).",
+                "Built the bank reference data module.",
+                "Built the module managing the international message teletransmission network (SWIFT).",
+                "Implemented the Message-Text (MT) standard: rule-based message creation, sending, receiving and assignment of SWIFT-MT messages."
+              ],
+              "tasks": [
+                "UML analysis and design.",
+                "Adopted the Scrum agile methodology.",
+                "Applied the Repository Pattern to abstract data access, within a layered architecture.",
+                "Built the web platform.",
+                "Wrote the required unit tests.",
+                "Built batches (Windows services) to automate message transmission."
+              ],
+              "technologies": ["ASP.NET MVC 5", "Unity", "TopShelf", "jQuery", "NHibernate", "AS400", "Azure DevOps", "Scrum", "xUnit"]
+            }
+          ]
+        },
+        {
+          "role": "Full Stack .NET Engineer",
+          "client": "Altran",
+          "period": { "start": "2018-09", "end": "2019-10" },
+          "location": "Ariana, Tunisia",
+          "projects": [
+            {
+              "name": "Recruitment Platform",
+              "description": "Design and implementation of a recruitment platform: job offer management, application management and CV management.",
+              "features": [
+                "Created recruitment needs and produced matching job offers.",
+                "Received CVs for each offer.",
+                "Filtered CVs by skills and offer requirements.",
+                "Scheduled interviews through the platform.",
+                "Conducted interviews through the platform."
+              ],
+              "tasks": [
+                "UML analysis and design.",
+                "Adopted the Scrum agile methodology.",
+                "Organized the code in layers (layered architecture).",
+                "Applied the Repository and Unit of Work patterns.",
+                "Built the RESTful web service and wrote the required unit tests.",
+                "Containerized the applications with Docker."
+              ],
+              "technologies": ["ASP.NET Core 2.1", "Entity Framework Core", "Angular 6", "NPM", "SVN", "Scrum", "PostgreSQL", "Docker", "xUnit", "SpecFlow"]
+            }
+          ]
+        },
+        {
+          "role": "Full Stack JS Engineer (final-year internship)",
+          "client": "Coders Cloud",
+          "period": { "start": "2018-02", "end": "2018-06" },
+          "location": "Tunis, Tunisia",
+          "projects": [
+            {
+              "name": "Commercial Offer Automation",
+              "description": "Design and development of an application that generates a commercial offer document from the description of an IT project (website or mobile app).",
+              "features": [
+                "Detected similarities in structure and content against the current project.",
+                "Automatically produced a draft quote.",
+                "Built an interface for the project manager to update the quote."
+              ],
+              "tasks": [],
+              "technologies": ["React.js", "Koa.js", "Node.js", "MongoDB", "Git", "Bitbucket"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "type": "education",
+      "title": "Education",
+      "items": [
+        { "period": "2015 - 2018", "title": "Engineering Degree in Software Engineering and Business Intelligence", "institution": "National Graduate School of Engineers of Tunis (ENSIT)" },
+        { "period": "2012 - 2015", "title": "Preparatory Classes for Engineering Studies (Physics-Chemistry track)", "institution": "Preparatory Institute for Engineering Studies of Monastir (IPEIM)" },
+        { "period": "2012", "title": "Baccalaureate (Computer Science)", "institution": "" }
+      ]
+    },
+    {
+      "id": "certifications",
+      "type": "certifications",
+      "title": "Certifications",
+      "items": [
+        { "title": "Cisco Certified Network Associate - Routing and Switching", "issuer": "Cisco", "year": "2017" },
+        { "title": "Big Data Developer - Mastery Award for Students 2016", "issuer": "IBM", "year": "2017" }
+      ]
+    },
+    {
+      "id": "languages",
+      "type": "languages",
+      "title": "Languages",
+      "items": [
+        { "name": "Arabic", "level": "Fluent" },
+        { "name": "English", "level": "Intermediate" },
+        { "name": "French", "level": "Professional" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "locale": "fr",
+  "profile": {
+    "name": "SASHL",
+    "logo": "SHL",
+    "title": "Ingénieur Full Stack .NET",
+    "summary": "Ingénieur Full Stack .NET avec plus de 5 ans d'expérience dans la conception et la réalisation de solutions web d'entreprise. Compétences en C#, ASP.NET, React, API REST, microservices et architectures événementielles, avec une attention particulière portée aux intégrations fiables, à la maintenabilité du code et aux tests automatisés.",
+    "location": "Île-de-France, France",
+    "contact": {
+      "email": "",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/saidsouhayel/?isSelfProfile=true",
+      "github": "https://github.com/saidshl",
+      "nuget": "https://www.nuget.org/profiles/Said93Souhayel"
+    }
+  },
+  "sections": [
+    {
+      "id": "skills",
+      "type": "skills",
+      "title": "Compétences",
+      "items": [
+        { "category": "Langages", "values": ["C#", "JavaScript", "TypeScript", "SQL"] },
+        { "category": "Frameworks et technologies", "values": ["ASP.NET Core", ".NET 8", "ASP.NET Framework", "Angular", "React.js", "jQuery", "Node.js", "Angular 6", "xUnit", "SpecFlow", "Pact-net", "Selenium"] },
+        { "category": "Bases de données", "values": ["SQL Server", "PostgreSQL", "DB2", "SQLite", "MongoDB", "Redis"] },
+        { "category": "Architectures", "values": ["Event Driven Architecture", "Multi-Tenancy", "Microservices", "Clean Architecture", "API RESTful", "API SOAP"] },
+        { "category": "Méthodologies de travail", "values": ["Scrum", "Kanban"] },
+        { "category": "Outils de projet", "values": ["Kafka", "RabbitMQ", "Azure DevOps", "Git", "SVN", "Docker", "Kubernetes", "Jira", "Bitbucket"] }
+      ]
+    },
+    {
+      "id": "experience",
+      "type": "timeline",
+      "title": "Expérience professionnelle",
+      "items": [
+        {
+          "role": "Ingénieur Full Stack .NET",
+          "client": "CDiscount",
+          "period": { "start": "2021-07", "end": null },
+          "location": "Bordeaux, France",
+          "projects": [
+            {
+              "name": "Marketplace CDiscount Powered by Octopia",
+              "description": "Filiale de CDiscount qui fournit un marché e-commerce clé en main aux vendeurs, avec l'accès à de nombreux services facilitant le développement e-commerce en France et à l'international.",
+              "features": [
+                "Mise en place du module Canaux de vente inscrits.",
+                "Inscription des vendeurs sur plusieurs canaux de vente.",
+                "Synchronisation des boutiques des vendeurs et des souscriptions.",
+                "Synchronisation des offres, des produits, des commandes et des discussions.",
+                "Synchronisation des flux financiers (rapports financiers).",
+                "Réplication des catalogues des canaux de vente et gestion fine des catalogues des vendeurs."
+              ],
+              "tasks": [
+                "Adoption de la méthodologie agile Scrum.",
+                "Adoption d'une architecture micro-services.",
+                "Mise en œuvre de l'Event Driven Architecture.",
+                "Adoption de l'approche Design First.",
+                "Adoption de l'approche Multi-Tenancy.",
+                "Création de jobs et de workers.",
+                "Création de web services REST.",
+                "Écriture de tests unitaires.",
+                "Écriture de tests BDD et de tests Pact.",
+                "Consommation de web services développés par d'autres équipes."
+              ],
+              "technologies": ["ASP.NET Core 5", "ASP.NET 6", "Kafka", "RabbitMQ", "MongoDB", "Azure DevOps", "Elasticsearch", "Kibana", "SonarQube", "Refit", "xUnit", "Stryker", "SpecFlow", "Pact-net"]
+            }
+          ]
+        },
+        {
+          "role": "Ingénieur Full Stack .NET",
+          "client": "Banque de Tunisie (BT)",
+          "period": { "start": "2019-11", "end": "2021-06" },
+          "location": "Tunis, Tunisie",
+          "projects": [
+            {
+              "name": "BIG BOARD",
+              "description": "Conception et développement d'une plateforme de routage des ordres de bourse et des ordres d'investissement SICAV au niveau des agences et du front-office DGMC (Direction de la Gestion Mobilière et des Capitaux).",
+              "features": [
+                "Mise en place du module d'administration (utilisateurs, rôles, habilitations).",
+                "Mise en place du module Bourse en ligne.",
+                "Mise en place du module SICAV (Société d'Investissement à Capital Variable).",
+                "Génération de fichiers PDF pour les ordres boursiers et SICAV, et des états boursiers de la journée."
+              ],
+              "tasks": [
+                "Analyse et conception en UML.",
+                "Adoption de la méthodologie agile Scrum.",
+                "Application du Repository Pattern pour l'abstraction de l'accès aux données, avec une architecture en couches.",
+                "Mise en place d'une plateforme web.",
+                "Écriture des tests unitaires nécessaires.",
+                "Implémentation de la communication temps réel avec la bibliothèque SignalR."
+              ],
+              "technologies": ["ASP.NET Web API", "Unity", "React.js", "MobX", "NHibernate", "AS400", "Azure DevOps", "Scrum", "SignalR", "RDLC", "xUnit"]
+            },
+            {
+              "name": "Hermes",
+              "description": "Refonte de la plateforme de gestion de télétransmission dans le réseau international.",
+              "features": [
+                "Mise en place du module d'administration (utilisateurs, rôles, habilitations).",
+                "Mise en place du module de référentiel de la banque.",
+                "Mise en place du module de gestion du réseau international de télétransmission des messages (SWIFT).",
+                "Mise en place du standard Message-Text (MT) : création des messages selon des règles définies, envoi, réception et affectation des messages SWIFT-MT."
+              ],
+              "tasks": [
+                "Analyse et conception en UML.",
+                "Adoption de la méthodologie agile Scrum.",
+                "Application du Repository Pattern pour l'abstraction de l'accès aux données, avec une architecture en couches.",
+                "Mise en place d'une plateforme web.",
+                "Écriture des tests unitaires nécessaires.",
+                "Mise en place de batchs (services Windows) pour automatiser la transmission des messages."
+              ],
+              "technologies": ["ASP.NET MVC 5", "Unity", "TopShelf", "jQuery", "NHibernate", "AS400", "Azure DevOps", "Scrum", "xUnit"]
+            }
+          ]
+        },
+        {
+          "role": "Ingénieur Full Stack .NET",
+          "client": "Altran",
+          "period": { "start": "2018-09", "end": "2019-10" },
+          "location": "Ariana, Tunisie",
+          "projects": [
+            {
+              "name": "Plateforme de recrutement",
+              "description": "Conception et réalisation d'une plateforme de recrutement : gestion des offres, des candidatures et des CV.",
+              "features": [
+                "Création des besoins de recrutement et production des offres correspondantes.",
+                "Réception des CV pour chaque offre.",
+                "Filtrage des CV par compétences et exigences de l'offre.",
+                "Planification des entretiens via la plateforme.",
+                "Passage des entretiens via la plateforme."
+              ],
+              "tasks": [
+                "Analyse et conception en UML.",
+                "Adoption de la méthodologie agile Scrum.",
+                "Organisation du code en couches (architecture en couches).",
+                "Application des patterns Repository et Unit of Work.",
+                "Mise en place du service web (API RESTful) et écriture des tests unitaires nécessaires.",
+                "Conteneurisation des applications avec Docker."
+              ],
+              "technologies": ["ASP.NET Core 2.1", "Entity Framework Core", "Angular 6", "NPM", "SVN", "Scrum", "PostgreSQL", "Docker", "xUnit", "SpecFlow"]
+            }
+          ]
+        },
+        {
+          "role": "Ingénieur Full Stack JS (stage de fin d'études)",
+          "client": "Coders Cloud",
+          "period": { "start": "2018-02", "end": "2018-06" },
+          "location": "Tunis, Tunisie",
+          "projects": [
+            {
+              "name": "Automatisation des offres commerciales",
+              "description": "Conception et développement d'une application qui génère un document d'offre commerciale à partir de la description d'un projet informatique (site web ou application mobile).",
+              "features": [
+                "Détection de similitudes dans la structure et le contenu par rapport au projet en cours.",
+                "Production automatique d'une ébauche de devis.",
+                "Mise en place d'une interface permettant au chef de projet de mettre à jour le devis."
+              ],
+              "tasks": [],
+              "technologies": ["React.js", "Koa.js", "Node.js", "MongoDB", "Git", "Bitbucket"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "type": "education",
+      "title": "Formation",
+      "items": [
+        { "period": "2015 - 2018", "title": "Diplôme d'ingénieur en Génie logiciel et Informatique décisionnelle", "institution": "École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT)" },
+        { "period": "2012 - 2015", "title": "Classe préparatoire aux études d'ingénieur, filière PC (Physique-Chimie)", "institution": "Institut Préparatoire aux Études d'Ingénieurs de Monastir (IPEIM)" },
+        { "period": "2012", "title": "Baccalauréat (Sciences informatiques)", "institution": "" }
+      ]
+    },
+    {
+      "id": "certifications",
+      "type": "certifications",
+      "title": "Certifications",
+      "items": [
+        { "title": "Cisco Certified Network Associate - Routing and Switching", "issuer": "Cisco", "year": "2017" },
+        { "title": "Big Data Developer - Mastery Award for Students 2016", "issuer": "IBM", "year": "2017" }
+      ]
+    },
+    {
+      "id": "languages",
+      "type": "languages",
+      "title": "Langues",
+      "items": [
+        { "name": "Arabe", "level": "Courant - confirmé" },
+        { "name": "Anglais", "level": "Intermédiaire" },
+        { "name": "Français", "level": "Professionnel" }
+      ]
+    }
+  ]
+}
