@@ -24,7 +24,17 @@ export function ContactSection({ cv, locale }: ContactSectionProps) {
     <>
       <section className="contact-section" id="contact">
         <div className="container-page contact-inner">
-          <div><p className="section-kicker">{locale === 'en' ? 'The next connection' : 'La prochaine connexion'}</p><h2 className="contact-title">{title}</h2><p className="contact-location">{location}</p></div>
+          <motion.div
+            className="contact-copy"
+            initial={reduceMotion ? false : { opacity: 0, x: -12 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: reduceMotion ? 0 : 0.38, ease: 'easeOut' }}
+          >
+            <p className="section-kicker">{locale === 'en' ? 'The next connection' : 'La prochaine connexion'}</p>
+            <h2 className="contact-title">{title}</h2>
+            <p className="contact-location">{location}</p>
+          </motion.div>
           {links.length > 0 && (
             <div className="contact-links">
               {links.map((link, index) => (

@@ -45,8 +45,8 @@ export function Hero({ cv, locale }: HeroProps) {
         >
           <p className="eyebrow">{copy.eyebrow}</p>
           <h1 className="hero-name" aria-label={cv.profile.name}>
-            <span className="hero-code-keyword" aria-hidden="true">public class</span>{' '}
-            <span>{cv.profile.name}</span>
+            <span className="hero-code-keyword" aria-hidden="true">Said</span>{' '}
+            <span>SOUHAYEL</span>
           </h1>
           <p className="hero-title"><span className="hero-code-comment" aria-hidden="true">// </span>{cv.profile.title}</p>
           <div className="hero-terminal" aria-label={locale === 'en' ? 'Profile summary in PowerShell style' : 'Résumé de profil au format PowerShell'}>
