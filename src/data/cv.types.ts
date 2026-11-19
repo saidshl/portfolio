@@ -11,6 +11,7 @@ export interface SkillGroup { category: string; values: string[] }
 export interface Project {
   name: string
   description: string
+  softSkills: string[]
   features: string[]
   tasks: string[]
   technologies: string[]

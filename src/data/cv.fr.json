@@ -41,6 +41,7 @@
           "projects": [
             {
               "name": "Marketplace CDiscount Powered by Octopia",
+              "softSkills": ["Collaboration interéquipes", "Vision systémique", "Sens des responsabilités"],
               "description": "Filiale de CDiscount qui fournit un marché e-commerce clé en main aux vendeurs, avec l'accès à de nombreux services facilitant le développement e-commerce en France et à l'international.",
               "features": [
                 "Mise en place du module Canaux de vente inscrits.",
@@ -74,6 +75,7 @@
           "projects": [
             {
               "name": "BIG BOARD",
+              "softSkills": ["Alignement des parties prenantes", "Résolution analytique de problèmes", "Exigence de qualité"],
               "description": "Conception et développement d'une plateforme de routage des ordres de bourse et des ordres d'investissement SICAV au niveau des agences et du front-office DGMC (Direction de la Gestion Mobilière et des Capitaux).",
               "features": [
                 "Mise en place du module d'administration (utilisateurs, rôles, habilitations).",
@@ -93,6 +95,7 @@
             },
             {
               "name": "Hermes",
+              "softSkills": ["Sens du détail", "Pensée orientée processus", "Fiabilité"],
               "description": "Refonte de la plateforme de gestion de télétransmission dans le réseau international.",
               "features": [
                 "Mise en place du module d'administration (utilisateurs, rôles, habilitations).",
@@ -120,6 +123,7 @@
           "projects": [
             {
               "name": "Plateforme de recrutement",
+              "softSkills": ["Approche centrée utilisateur", "Résolution structurée de problèmes", "Adaptabilité"],
               "description": "Conception et réalisation d'une plateforme de recrutement : gestion des offres, des candidatures et des CV.",
               "features": [
                 "Création des besoins de recrutement et production des offres correspondantes.",
@@ -148,6 +152,7 @@
           "projects": [
             {
               "name": "Automatisation des offres commerciales",
+              "softSkills": ["Résolution créative de problèmes", "Communication orientée client", "Sens des responsabilités"],
               "description": "Conception et développement d'une application qui génère un document d'offre commerciale à partir de la description d'un projet informatique (site web ou application mobile).",
               "features": [
                 "Détection de similitudes dans la structure et le contenu par rapport au projet en cours.",

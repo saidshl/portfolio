@@ -41,6 +41,7 @@
           "projects": [
             {
               "name": "Marketplace CDiscount Powered by Octopia",
+              "softSkills": ["Cross-team collaboration", "Systems thinking", "Ownership at scale"],
               "description": "A CDiscount subsidiary providing a turnkey e-commerce marketplace to sellers, with access to many services that ease e-commerce growth in France and internationally.",
               "features": [
                 "Built the registered sales channels module.",
@@ -74,6 +75,7 @@
           "projects": [
             {
               "name": "BIG BOARD",
+              "softSkills": ["Stakeholder alignment", "Analytical problem-solving", "Quality mindset"],
               "description": "Design and development of a platform routing stock-market orders and SICAV investment orders at branch level and for the DGMC front office (Securities and Capital Management Department).",
               "features": [
                 "Built the administration module (users, roles, permissions).",
@@ -93,6 +95,7 @@
             },
             {
               "name": "Hermes",
+              "softSkills": ["Attention to detail", "Process thinking", "Reliability"],
               "description": "Rebuild of the teletransmission management platform for the international network.",
               "features": [
                 "Built the administration module (users, roles, permissions).",
@@ -120,6 +123,7 @@
           "projects": [
             {
               "name": "Recruitment Platform",
+              "softSkills": ["User-centered thinking", "Structured problem-solving", "Adaptability"],
               "description": "Design and implementation of a recruitment platform: job offer management, application management and CV management.",
               "features": [
                 "Created recruitment needs and produced matching job offers.",
@@ -148,6 +152,7 @@
           "projects": [
             {
               "name": "Commercial Offer Automation",
+              "softSkills": ["Creative problem-solving", "Client-oriented communication", "Ownership"],
               "description": "Design and development of an application that generates a commercial offer document from the description of an IT project (website or mobile app).",
               "features": [
                 "Detected similarities in structure and content against the current project.",
