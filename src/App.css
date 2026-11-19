@@ -125,9 +125,6 @@
 .project-index-item:hover .project-index-arrow, .project-index-item.is-active .project-index-arrow { opacity: 1; transform: translate(0, 0); }
 .project-stage { min-width: 0; padding: clamp(1.4rem, 3.5vw, 3rem); }
 .project-spotlight { min-height: 100%; }
-.project-context-line { display: flex; flex-wrap: wrap; gap: .45rem 1.1rem; color: var(--accent-strong); font: .63rem/1.5 var(--font-mono); text-transform: uppercase; }
-.project-context-line span + span::before { margin-right: 1.1rem; color: var(--line-strong); content: '/'; }
-.experience-role { margin: .75rem 0 1.2rem; color: var(--muted); font-size: .75rem; }
 .project-name { margin: 0; color: var(--fg); font: 500 clamp(1.5rem, 3.2vw, 2.35rem)/1.15 var(--font-display); }
 .project-context { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 1rem; margin-top: 1.5rem; padding: 1.1rem 0; border-block: 1px solid var(--line); }
 .project-section-label { margin: 0; color: var(--muted); font: .6rem/1.5 var(--font-mono); letter-spacing: 0; text-transform: uppercase; }
@@ -174,20 +171,14 @@
   .skill-group:hover .skill-value { border-color: color-mix(in srgb, var(--accent) 48%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, var(--surface-raised)); }
 }
 
-.journey-section { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(3rem, 8vw, 7rem); }
-.education-list { position: relative; display: grid; gap: 0; margin-top: 2rem; padding-left: 18px; border-top: 1px solid var(--line); }
-.education-list::before { position: absolute; top: 14px; bottom: 14px; left: 4px; width: 1px; background: linear-gradient(var(--accent), var(--accent-secondary)); content: ''; opacity: .48; }
-.education-entry { position: relative; display: grid; grid-template-columns: 100px 1fr; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
-.education-marker { position: absolute; top: 1.25rem; left: -18px; width: 9px; aspect-ratio: 1; border: 1px solid var(--accent); border-radius: 50%; background: var(--surface); box-shadow: 0 0 0 3px var(--bg); }
-.education-period { color: var(--accent-strong); font: .67rem/1.5 var(--font-mono); }
-.education-title { margin: 0; color: var(--fg); font: 500 .94rem/1.45 var(--font-display); }
-.education-institution { margin: .35rem 0 0; color: var(--muted); font-size: .75rem; line-height: 1.5; }
-.credential-column + .credential-column { margin-top: 2.7rem; }
+.journey-section { display: grid; grid-template-columns: 1fr; }
+.journey-credentials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(3rem, 8vw, 7rem); }
 .credential-list { display: grid; gap: 0; margin-top: 1rem; border-top: 1px solid var(--line); }
 .credential-entry { display: flex; justify-content: space-between; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
 .credential-entry:not(.language-entry) { transition: padding-left .22s ease, border-color .22s ease; }
 .credential-entry:not(.language-entry):hover { padding-left: 8px; border-color: var(--accent); }
 .credential-name { margin: 0; color: var(--fg); font-size: .8rem; line-height: 1.55; }
+.credential-issuer { display: block; margin-top: .35rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .credential-detail { flex: 0 0 auto; color: var(--muted); font: .65rem/1.5 var(--font-mono); }
 .language-entry { display: flex; justify-content: space-between; gap: 1rem; color: var(--fg); font-size: .8rem; }
 .language-entry span:last-child { color: var(--muted); }
@@ -243,6 +234,7 @@
   .skills-layout { grid-template-columns: 1fr; gap: 1.5rem; }
   .skill-group { grid-template-columns: 1fr; gap: .65rem; }
   .journey-section { grid-template-columns: 1fr; gap: 3rem; }
+  .journey-credentials { grid-template-columns: 1fr; gap: 3rem; }
   .contact-inner { align-items: flex-start; flex-direction: column; }
 }
 

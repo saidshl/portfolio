@@ -23,7 +23,6 @@ export interface Job {
   location: string
   projects: Project[]
 }
-export interface EducationItem { period: string; title: string; institution: string }
 export interface CertificationItem { title: string; issuer: string; year: string }
 export interface LanguageItem { name: string; level: string }
 
@@ -32,7 +31,6 @@ interface SectionBase<T extends string, I> { id: string; type: T; title: string;
 export type Section =
   | SectionBase<'skills', SkillGroup>
   | SectionBase<'timeline', Job>
-  | SectionBase<'education', EducationItem>
   | SectionBase<'certifications', CertificationItem>
   | SectionBase<'languages', LanguageItem>
 

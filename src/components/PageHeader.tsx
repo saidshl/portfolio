@@ -14,21 +14,21 @@ interface PageHeaderProps {
 export function PageHeader({ locale, onLocaleChange, theme, onThemeToggle }: PageHeaderProps) {
   const reduceMotion = useReducedMotion()
   const labels = locale === 'en'
-    ? { home: 'Overview', experience: 'Experience', skills: 'Expertise', education: 'Background', contact: 'Contact', light: 'Switch to light theme', dark: 'Switch to dark theme' }
-    : { home: 'Accueil', experience: 'Expérience', skills: 'Expertise', education: 'Parcours', contact: 'Contact', light: 'Passer au thème clair', dark: 'Passer au thème sombre' }
+    ? { home: 'Overview', experience: 'Experience', skills: 'Expertise', credentials: 'Credentials', contact: 'Contact', light: 'Switch to light theme', dark: 'Switch to dark theme' }
+    : { home: 'Accueil', experience: 'Expérience', skills: 'Expertise', credentials: 'Profil', contact: 'Contact', light: 'Passer au thème clair', dark: 'Passer au thème sombre' }
   const [activeSection, setActiveSection] = useState('top')
   const navigation = [
     { id: 'top', label: labels.home },
     { id: 'experience', label: labels.experience },
     { id: 'expertise', label: labels.skills },
-    { id: 'background', label: labels.education },
+    { id: 'credentials', label: labels.credentials },
     { id: 'contact', label: labels.contact },
   ]
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') return
 
-    const sectionIds = ['top', 'experience', 'expertise', 'background', 'contact']
+    const sectionIds = ['top', 'experience', 'expertise', 'credentials', 'contact']
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => section !== null)

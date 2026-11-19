@@ -167,16 +167,6 @@
       ]
     },
     {
-      "id": "education",
-      "type": "education",
-      "title": "Education",
-      "items": [
-        { "period": "2015 - 2018", "title": "Engineering Degree in Software Engineering and Business Intelligence", "institution": "National Graduate School of Engineers of Tunis (ENSIT)" },
-        { "period": "2012 - 2015", "title": "Preparatory Classes for Engineering Studies (Physics-Chemistry track)", "institution": "Preparatory Institute for Engineering Studies of Monastir (IPEIM)" },
-        { "period": "2012", "title": "Baccalaureate (Computer Science)", "institution": "" }
-      ]
-    },
-    {
       "id": "certifications",
       "type": "certifications",
       "title": "Certifications",

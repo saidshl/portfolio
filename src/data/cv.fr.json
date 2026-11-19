@@ -167,16 +167,6 @@
       ]
     },
     {
-      "id": "education",
-      "type": "education",
-      "title": "Formation",
-      "items": [
-        { "period": "2015 - 2018", "title": "Diplôme d'ingénieur en Génie logiciel et Informatique décisionnelle", "institution": "École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT)" },
-        { "period": "2012 - 2015", "title": "Classe préparatoire aux études d'ingénieur, filière PC (Physique-Chimie)", "institution": "Institut Préparatoire aux Études d'Ingénieurs de Monastir (IPEIM)" },
-        { "period": "2012", "title": "Baccalauréat (Sciences informatiques)", "institution": "" }
-      ]
-    },
-    {
       "id": "certifications",
       "type": "certifications",
       "title": "Certifications",

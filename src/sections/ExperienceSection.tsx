@@ -8,33 +8,16 @@ interface ExperienceSectionProps {
   locale: Cv['locale']
 }
 
-function formatPeriod(period: Extract<Section, { type: 'timeline' }>['items'][number]['period'], locale: Cv['locale']) {
-  const language = locale === 'fr' ? 'fr-FR' : 'en-US'
-  const format = (value: string) => new Intl.DateTimeFormat(language, { month: 'short', year: 'numeric' }).format(new Date(`${value}-01T12:00:00`))
-  return `${format(period.start)} - ${period.end ? format(period.end) : locale === 'fr' ? "Aujourd'hui" : 'Present'}`
-}
-
 export function ExperienceSection({ cv, locale }: ExperienceSectionProps) {
   const reduceMotion = useReducedMotion()
   const section = cv.sections.find((item) => item.type === 'timeline')
   if (!section || section.type !== 'timeline') return null
-  const projects = section.items.flatMap((job) => job.projects.map((project) => ({
-    ...project,
-    client: job.client,
-    location: job.location,
-    period: formatPeriod(job.period, locale),
-    role: job.role,
-  })))
+  const projects = section.items.flatMap((job) => job.projects)
   return <ExperienceExplorer projects={projects} locale={locale} reduceMotion={reduceMotion} title={section.title} />
 }
 
 interface ExperienceExplorerProps {
-  projects: (Extract<Section, { type: 'timeline' }>['items'][number]['projects'][number] & {
-    client: string
-    location: string
-    period: string
-    role: string
-  })[]
+  projects: Extract<Section, { type: 'timeline' }>['items'][number]['projects']
   locale: Cv['locale']
   reduceMotion: boolean | null
   title: string
@@ -44,11 +27,11 @@ function ExperienceExplorer({ projects, locale, reduceMotion, title }: Experienc
   const [activeIndex, setActiveIndex] = useState(0)
   const activeProject = projects[activeIndex]
   const intro = locale === 'en'
-    ? 'A closer look at the environments, challenges, and strengths behind selected work.'
-    : 'Un aperçu des contextes, des défis et des compétences mobilisées sur des projets choisis.'
+    ? 'Explore the domains, technical skills, and soft skills behind selected projects.'
+    : 'Explorez les domaines, les compétences techniques et les savoir-être mobilisés sur des projets choisis.'
   const labels = locale === 'en'
-    ? { index: 'Project files', context: 'Context', outcomes: 'What I worked on', people: 'How I work', practices: 'Engineering practices', tools: 'Technology in the field', select: 'Select a project' }
-    : { index: 'Projets', context: 'Contexte', outcomes: 'Réalisations', people: 'Savoir-être', practices: 'Pratiques d’ingénierie', tools: 'Technologies mobilisées', select: 'Choisir un projet' }
+    ? { index: 'Projects', context: 'Domain', outcomes: 'Key contributions', people: 'Soft skills', practices: 'Engineering practices', tools: 'Technical skills', select: 'Select a project' }
+    : { index: 'Projets', context: 'Domaine', outcomes: 'Contributions clés', people: 'Savoir-être', practices: 'Pratiques d’ingénierie', tools: 'Compétences techniques', select: 'Choisir un projet' }
 
   return (
     <section className="section experience-section" id="experience">
@@ -66,12 +49,12 @@ function ExperienceExplorer({ projects, locale, reduceMotion, title }: Experienc
               <button
                 className={`project-index-item${index === activeIndex ? ' is-active' : ''}`}
                 type="button"
-                key={`${project.client}-${project.name}`}
+                key={project.name}
                 onClick={() => setActiveIndex(index)}
                 aria-pressed={index === activeIndex}
               >
                 <span className="project-index-number">0{index + 1}</span>
-                <span className="project-index-copy"><span>{project.client}</span><strong>{project.name}</strong></span>
+                <span className="project-index-copy"><strong>{project.name}</strong></span>
                 <span className="project-index-arrow" aria-hidden="true">↗</span>
               </button>
             ))}
@@ -86,8 +69,6 @@ function ExperienceExplorer({ projects, locale, reduceMotion, title }: Experienc
                 exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
                 transition={{ duration: reduceMotion ? 0 : .28, ease: 'easeOut' }}
               >
-                <div className="project-context-line"><span>{activeProject.client}</span><span>{activeProject.location}</span><span>{activeProject.period}</span></div>
-                <p className="experience-role">{activeProject.role}</p>
                 <h3 className="project-name">{activeProject.name}</h3>
                 <div className="project-context">
                   <span className="project-section-label">{labels.context}</span>
